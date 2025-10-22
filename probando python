@@ -1,0 +1,84 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP9qjy21JS7t9428uxlaVN6",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mayraesp97/proyecto-ciberseguridad/blob/main/probando%20python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "id": "AlXpjZPaA6am",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "ca49cd9e-622c-466f-cc9c-158c906fdc55"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "¡Bienvenido a Python!\n",
+            "Este es un bucle que imprime 10 veces\n",
+            "num es: 1\n",
+            "num es: 2\n",
+            "num es: 3\n",
+            "num es: 4\n",
+            "num es: 5\n",
+            "num es: 6\n",
+            "num es: 7\n",
+            "num es: 8\n",
+            "num es: 9\n",
+            "num es: 10\n",
+            "Hoy es: Lunes\n",
+            "¡Comenzamos la semana con toda la actitud!\n"
+          ]
+        }
+      ],
+      "source": [
+        "import random\n",
+        "\n",
+        "print('¡Bienvenido a Python!')\n",
+        "\n",
+        "print('Este es un bucle que imprime 10 veces')\n",
+        "for num in range(1, 11):\n",
+        "    print(f'num es: {num}')\n",
+        "\n",
+        "semana = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes']\n",
+        "dia = random.choice(semana)\n",
+        "\n",
+        "print(f'Hoy es: {dia}')\n",
+        "\n",
+        "if dia == 'Lunes':\n",
+        "    print('¡Comenzamos la semana con toda la actitud!')\n",
+        "elif(dia == 'Viernes'):\n",
+        "    print('¡Listos para un fin de semana!')\n",
+        "else:\n",
+        "    print('¿Qué día es?')"
+      ]
+    }
+  ]
+}
