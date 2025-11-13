@@ -1,0 +1,30 @@
+/* Importar una fuente (opcional) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo para la barra de navegación */
+.navbar-brand {
+    font-weight: 700;
+}
+
+/* Estilo para las tarjetas de amenazas */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+}
+
+/* --- Media Queries para Responsividad --- */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .display-5 {
+        font-size: 2.5rem; /* Título más pequeño en móviles */
+    }
+}

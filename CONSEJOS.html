@@ -1,0 +1,84 @@
+<h1 class="text-center mb-4">Consejos de Seguridad</h1>
+
+<div class="row">
+    <div class="col-lg-6 mb-5">
+        <h2>Buenas Prácticas</h2>
+        <ul>
+            <li><strong>Usa contraseñas fuertes:</strong> Combina letras, números y símbolos.</li>
+            <li><strong>Activa la autenticación de dos factores (2FA):</strong> Añade una capa extra de seguridad.</li>
+            <li><strong>Mantén tu software actualizado:</strong> Instala parches de seguridad.</li>
+            <li><strong>Desconfía de redes Wi-Fi públicas:</strong> Usa una VPN si necesitas conectarte.</li>
+            <li><strong>Realiza copias de seguridad:</strong> Guarda tu información importante en otro lugar.</li>
+        </ul>
+
+        <hr class="my-4">
+
+        <h2>Pon a prueba tu conocimiento</h2>
+        <p>¿Crees que puedes identificar un correo de phishing? Realiza nuestro test rápido.</p>
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#securityTestModal">
+            Iniciar Test de Seguridad
+        </button>
+    </div>
+
+    <div class="col-lg-6">
+        <h2>Contacto</h2>
+        <p>¿Tienes dudas? Envíanos un mensaje.</p>
+        <form id="contactForm" novalidate>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+                <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">Por favor, ingresa un email válido.</div>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                <div class="invalid-feedback">El mensaje no puede estar vacío.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</div>
+
+
+<div class="modal fade" id="securityTestModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Test Rápido de Seguridad</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Recibes un email de "Netflix" diciendo que tu cuenta será suspendida si no actualizas tu pago en el siguiente enlace. ¿Qué haces?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="testQ1" id="q1a1" value="incorrecto">
+                    <label class="form-check-label" for="q1a1">
+                        Hacer clic en el enlace inmediatamente para no perder mi cuenta.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="testQ1" id="q1a2" value="correcto">
+                    <label class="form-check-label" for="q1a2">
+                        Ignorar el email, ir al sitio web oficial de Netflix escribiendo la URL yo mismo y verificar mi cuenta allí.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="testQ1" id="q1a3" value="incorrecto">
+                    <label class="form-check-label" for="q1a3">
+                        Responder al email pidiendo más información.
+                    </label>
+                </div>
+                
+                <div id="testFeedback" class="alert mt-3" style="display: none;"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" id="btnCheckTest">Verificar Respuesta</button>
+            </div>
+        </div>
+    </div>
+</div>
